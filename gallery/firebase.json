@@ -1,0 +1,29 @@
+{
+  "hosting": [
+    {
+      "site": "flutter-gallery-archive",
+      "public": "build/web",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "site": "gallery-flutter-dev",
+      "public": "build/web",
+      "redirects": [
+        {
+          "source": "/",
+          "destination": "https://docs.flutter.dev/gallery",
+          "type": 301
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}
